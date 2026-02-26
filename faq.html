@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>FAQ - Dúvidas Frequentes</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.faq-item {
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+}
+
+.faq-answer {
+  padding: 15px;
+  display: none;
+  background-color: #f9f9f9;
+}
+
+.voltar {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Dúvidas Frequentes</h1>
+
+<div class="faq-container">
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFAQ(this)">
+      Esqueci minha senha, o que faço?
+    </div>
+    <div class="faq-answer">
+      Clique em "Esqueci minha senha" na tela de login e siga as instruções enviadas para seu e-mail.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFAQ(this)">
+      O site é confiável?
+    </div>
+    <div class="faq-answer">
+      Sim. Utilizamos protocolos de segurança e criptografia para proteger seus dados.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFAQ(this)">
+      Quando o site foi criado?
+    </div>
+    <div class="faq-answer">
+      O site foi criado em 2026 como parte de um projeto de desenvolvimento web.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFAQ(this)">
+      Quando foi a última atualização?
+    </div>
+    <div class="faq-answer">
+      A última atualização ocorreu 25/02/2026 para melhorias de desempenho e segurança.
+    </div>
+  </div>
+
+</div>
+
+<a href="index.html" class="voltar">⬅ Voltar para a página inicial</a>
+
+<script>
+function toggleFAQ(element) {
+  const answer = element.nextElementSibling;
+  answer.style.display = 
+    answer.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
